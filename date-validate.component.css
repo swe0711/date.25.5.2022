@@ -1,0 +1,43 @@
+ .card {
+    width: 25rem;
+    height: 30rem;
+    background-color: rgb(127, 181, 255);
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    margin-left:100px;
+    box-shadow: 10px 10px 8px 0 rgba(0, 0, 0, 0.2);
+    
+  }
+
+.invalid-feedback.text-danger{
+    color:rgba(243, 14, 14, 0.589);
+    
+}
+.card-body{
+    text-align:center ;
+}
+
+.btn1{
+    color:rgb(0, 0, 0);
+    background-color: rgb(231, 231, 187);
+    border: 0ch;
+    width: 100px;
+    height: 40px;
+    font-family: cursive;
+}
+.btn2{
+    color:rgb(0, 0, 0);
+    background-color: rgb(231, 231, 187);
+    border: 0ch;
+    width: 100px;
+    height: 40px;
+    font-family: cursive;
+}
+.dat{
+    color:white;
+}
