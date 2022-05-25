@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+body{
+    background-image:url(F:\forms\image\bgnew.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100%;
+    position: relative;
+    font-family: cursive;
+    opacity: 0.8;
+}
+h1{
+    text-align: center;
+    background-color: rgb(127, 181, 255);
+    color:white;
+}
+h3{
+    text-align:center;
+}
