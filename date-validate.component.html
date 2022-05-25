@@ -1,0 +1,83 @@
+<h1>Learn the best from the best!</h1>
+<h3>"choose your own convenient date for the workshop"</h3>
+<pre></pre>
+<pre></pre>
+<pre></pre>
+<div class="col d-flex justify-content-center align-items-center">
+  <div class="card text-center">
+    <form [formGroup]="datevalidate" (ngSubmit)="sub()">
+      <div class="card-header">
+        <h1 style="color:white ;">Aspiring Minds</h1>
+      </div>
+      <pre></pre>
+      <div class="card-body">
+        <div class="date1 form-group">
+          <label class="dat">
+            <span><h3>Start date<b style="color:red">*</b></h3></span>
+          </label>
+          <!-- <input formControlName="startdate" #startdate required min="{{currentDate1|date:'yyyy-MM-dd'}}"
+            max="{{enddate.value|date:'yyyy-MM-dd'}}" type="date" class="form-control" ngModel
+            [class.has-error]="startdate.oninvalid &&  dateval">
+          <div class="invalid-feedback" *ngIf="f['startdate'].errors">
+            <span class="text-danger" *ngIf=" f['startdate'].errors?.['required'] && f['startdate'].touched">start date
+              is requried</span> -->
+              <div class="field1">
+              <input formControlName="startdate" #startdate required max="{{enddate.value|date:'yyyy-MM-dd'}}" min="{{currentDate1|date:'yyyy-MM-dd'}}" type="date" class="form-control" ngModel onkeydown="return false">
+            <!-- [class.has-error]="startdate.oninvalid &&  dateval" -->
+             <!-- console.log("enter"); -->
+
+          <!-- <div class="invalid-feedback" *ngIf="f['startdate'].errors"> -->
+            <!-- console.log("enter"); -->
+
+            <small class="text-danger" *ngIf=" f['startdate'].errors?.['required'] && f['startdate'].touched"><h5>start date is requried</h5></small>
+              </div>
+            <!-- <small class="text-danger" *ngIf="f['enddate'].errors?.['required'] ">Enddate should be greater than current date</small> -->
+            <!-- <span class="text-danger" *ngIf="f['startdate'].pristine&&f['startdate'].touched">start date is invalid</span> -->
+          <!-- </div> -->
+          <!-- startdate.value!='00-00-0000'&&f['startdate'].touched -->
+          <!-- min="{{currentDate1|date:'yyyy-MM-dd'}}" -->
+
+        </div>
+        <pre></pre>
+
+        <div class="date2 form-group ">
+          <label class="dat">
+            <span> <h3>End date <b style="color:red">*</b></h3></span>
+            <!-- <h3>End date </h3> -->
+          </label>
+
+          <!-- <input formControlName="enddate" required #enddate maxlength="10"
+            min="{{currentDate1.value|date:'yyyy-MM-dd'}}" min="{{ startdate.value|date:'yyyy-MM-dd'}}" type="date"
+            class="form-control" [class.is-invalid]="f['endate'].oninvalid && dateval"/> -->
+            <div class="field2">
+
+          <input type="date" formControlName="enddate" class="form-control"
+            min="{{currentDate1.value|date:'yyyy-MM-dd'}}" min="{{ startdate.value|date:'yyyy-MM-dd'}}" ngModel #enddate onkeydown="return false">
+
+            <!-- [class.has-error]="enddate.oninvalid &&  dateval" -->
+            
+         
+          {{enddate.oninvalid}}
+
+          <!-- <div class="invalid-feedback" *ngIf="f['enddate'].errors"> -->
+            <small class="text-danger" *ngIf=" f['enddate'].errors?.['required'] && f['enddate'].touched"><h5>End date is
+              requried</h5></small>
+            </div>
+            <!-- <small class="text-danger" *ngIf="f['enddate'].errors?.['required'] ">Enddate should be greater than current date</small> -->
+          <!-- </div> -->
+          <!-- min="{{startdate.value|date:'yyyy-MM-dd'}}" -->
+          <!-- <span class="text-danger" *ngIf="enddate.value==null">end date is invalid</span> -->
+
+        </div>
+        <pre></pre>
+        <pre></pre>
+        <pre></pre>
+        <pre></pre>
+        <pre><button type="button" class="btn1" (click)="sub()">Submit</button>     <button type="reset" class="btn2">Reset</button></pre>
+      </div>
+
+    </form>
+
+    <!-- {{datevalidate.value|json}} -->
+  </div>
+</div>
